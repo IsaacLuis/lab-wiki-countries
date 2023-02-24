@@ -29,7 +29,8 @@ useEffect(() => {
 
 
 
-  return <div className="App">
+  return <div className="container">
+    <div className="row"> 
 
   <Navbar/>
   {/* <CountriesList CountriesListData = {countries}/> */}
@@ -37,7 +38,7 @@ useEffect(() => {
   <Routes>
 
   <Route 
-          path="/countries" 
+          path="/" 
           element={ <CountriesList CountriesListData={foundCountry} /> } 
         />
 
@@ -47,7 +48,7 @@ useEffect(() => {
         />
         
   </Routes>
-
+  </div>
   </div>;
 }
 export default App;
